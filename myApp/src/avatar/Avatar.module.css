@@ -1,0 +1,39 @@
+.avatar_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: center;
+    height: 40vh;
+    box-shadow: 0 0 3px gray;
+    transition: all 0.25s ease-in-out;
+}
+
+.avatar_card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px gray;
+}
+
+.avatar_ava{
+    font-size: 10rem;
+    color: rgb(183, 183, 251);
+}
+
+.avatar_hovered{
+    font-size: 10rem;
+    color: rgb(140, 140, 250);
+}
+
+.avatar_btn{
+    width: 50%;
+    font-size: large;
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid rgb(140, 140, 250);
+}
+
+.avatar_btn:hover{
+    border: 2px solid rgb(140, 140, 250);
+    background-color: rgb(140, 140, 250);
+}

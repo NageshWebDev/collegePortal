@@ -1,0 +1,62 @@
+.portal_section{
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.staffPortal_div{
+    border: 2px solid lightslategray;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+    transition: all 0.25s ease-in-out;
+}
+
+.staffPortal_div:hover{
+    background-color: ghostwhite;
+    transform: scale(1.025);
+    box-shadow: 6px 6px 12px rgba(0,0,0,0.3);
+}
+
+.stuPortal_form{
+    max-width: 800px;
+    min-width: 600px;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    margin: 0;
+    margin-top: 5rem;
+    padding: 1rem;
+    
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px gray;
+}
+
+.submit_btn {
+    width: 25%;
+    font-size: large;
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid rgb(140, 140, 250);
+}
+
+
+.submit_btn:hover {
+    color: white;
+    border: 2px solid rgb(140, 140, 250);
+    background-color: rgb(140, 140, 250);
+}
+
+.alert_submit{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-evenly;
+}

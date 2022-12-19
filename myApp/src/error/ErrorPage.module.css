@@ -1,0 +1,24 @@
+.errorPage_main{
+    margin: 0;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.errorPage_div{
+    background-color: rgb(255,0,0,0.8);
+    border: 2px solid black;
+    box-shadow: 5px 5px 2px rgb(119, 136, 153);
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    color: white;
+    animation: zoom 1s linear infinite alternate;
+}
+
+@keyframes zoom {
+    0% {transform: scale(1); box-shadow: 5px 5px 2px lightslategray;}
+    100% {transform: scale(1.1); box-shadow: 5px 5px 5px rgb(119, 136, 153,0.5);}
+}

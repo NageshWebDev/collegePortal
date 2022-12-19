@@ -1,0 +1,103 @@
+.login_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    text-align: center;
+    height: 55vh;
+    box-shadow: 0 0 3px gray;
+    transition: all 0.25s ease-in-out;
+}
+
+.login_card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px gray;
+}
+
+.login_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.login_ava {
+    font-size: 10rem;
+    color: rgb(183, 183, 251);
+}
+
+.login_hovered {
+    font-size: 10rem;
+    color: rgb(140, 140, 250);
+}
+
+.login_btn {
+    width: 50%;
+    font-size: large;
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid rgb(140, 140, 250);
+}
+
+
+.login_btn:hover {
+    color: white;
+    border: 2px solid rgb(140, 140, 250);
+    background-color: rgb(140, 140, 250);
+}
+
+.login_wrongPassword {
+    border: 3px solid crimson;
+    color: red;
+}
+
+.login_rightPassword {
+    border: 3px solid yellowgreen;
+    color: green;
+}
+
+.login_que {
+    font-size: xx-large;
+}
+
+.login_tooltip {
+    position: relative;
+}
+
+.login_tooltip::after {
+    position: absolute;
+    left: 3rem;
+    content: attr(data-tooltip);
+    background-color: rgb(140, 140, 250);
+    color: white;
+    width: max-content;
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.25);
+
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+    transform-origin: left center;
+}
+
+.login_tooltip::before{
+    position: absolute;
+    left: 2.6rem;
+    top: 0.65rem;
+    content: '';
+    padding: 0.4rem;
+    background-color: rgb(140, 140, 250);
+
+    transform: rotate(45deg) scale(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.login_tooltip:hover::after {
+    transform: scale(1);
+}
+
+.login_tooltip:hover::before{
+    transform: rotate(45deg) scale(1);
+}
